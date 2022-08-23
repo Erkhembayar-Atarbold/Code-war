@@ -21,3 +21,35 @@ const wordClone = (str, cloneInt, target) => {
 };
 
 // console.log(wordClone("drank pass faded", 10, "drank"));
+
+//Write function that checks is n is square perfect
+
+function squarePerfect(n) {
+  //make sure is n is above 0
+  if (n < 0) {
+    return "fail test n";
+  } else if (Number.isInteger(n)) {
+    return "pass test square";
+  } else {
+    return NaN;
+  }
+  //if n is > 0 apply Number.isInterger(n)
+}
+
+//Make a int to opposite
+const oppositeInt = (number) => {
+  return -number;
+};
+
+//Code a program that will get a century from a year
+// const findCentury = (year) => {
+//   return Math.floor((year - 1) / 100 + 1);
+// };
+
+//Sum all odd numbers in array
+const addOdd = (arr) => {
+  return arr
+    .filter((ele) => (ele % 2 !== 0 ? ele : 0))
+    .reduce((sum, cur) => sum + cur, 0);
+};
+console.log(addOdd([1, 1, 19, 9, 5]));
